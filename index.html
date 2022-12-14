@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linda Ikeji WordPress Theme</title>
+    <!--==BOOTSTRAP CDN==-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!--==GOOGLE FONT CDN==-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--==JS FILES==-->
+    <!--==BOOTSTRAP JS FILES-->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!--==ANIMATE CDN==-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--==Custom JS FILE==-->
+    <script defer src="script.js"></script>
+    <!--==ADDTHIS SHAREBUTTON SCRIPT==-->
+    <!--==FONT AWESOME CDN==-->
+    <script
+      defer
+      src="https://kit.fontawesome.com/dc8c325aa0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--==CSS FILE==-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--==HEADER==-->
+    <header class="header">
+      <div class="header__top">
+        <div class="header__top--navList">
+          <a href="#"
+            ><i class="fa-brands fa-youtube" style="font-size: 1rem"></i>
+            YouTube</a
+          >
+          <a href="#"
+            ><i class="fa-brands fa-instagram" style="font-size: 1rem"></i>
+            Instagram</a
+          >
+          <a
+            href="#advertPop"
+            data-bs-toggle="modal"
+            data-bs-target="#advertPop"
+            ><i class="fa-solid fa-rectangle-ad" style="font-size: 1rem"></i>
+            Advert Enquiry</a
+          >
+        </div>
+      </div>
+      <div class="header__main">
+        <div class="header__main--logo">
+          <div class="site__logo text-center">
+            <a href="#">Welcome to Linda Ikeji's Theme</a>
+            <p class="site__logo--extra">
+              <em
+                >So much more to read now
+                <i class="fa-regular fa-face-smile-wink"></i
+              ></em>
+            </p>
+          </div>
+          <div class="header__main--search">
+            <p data-bs-toggle="modal" data-bs-target="#searchPop">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </p>
+          </div>
+        </div>
+        <div class="site__description text-center">
+          <p>
+            News, Events, Entertainment, Lifestyle, Fashion, Beauty, Inspiration
+            and yes... Gossip! *Wink*
+          </p>
+        </div>
+      </div>
+      <!--==You can add more advert codes. Just duplicate the header__adverts-1 div.==-->
+      <div class="header__adverts">
+        <div class="header__adverts--1">
+          <a href="#"
+            ><img
+              src="https://www.alphawebtips.com/wp-content/uploads/2022/12/PLACE-YOUR-ADVERT-HERE.gif"
+              class="img-fluid"
+              height="90"
+              width="728"
+          /></a>
+        </div>
+        <div class="header__adverts--2">
+          <a href="#"
+            ><img
+              src="https://www.alphawebtips.com/wp-content/uploads/2022/12/728-x-90-Advertise-here-banner.jpg"
+              class="img-fluid"
+          /></a>
+        </div>
+      </div>
+
+      <!--==HEADER POP UPS==-->
+      <!-- Advert Pop-up -->
+      <div
+        class="modal fade"
+        id="advertPop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="advertPopLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="advertPopLabel">
+                Advert With Us
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>Contact us via email: info@alphawebconsult.com</p>
+              <p>Phone: 08151244131, 09030945543</p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Search Form Pop-->
+      <div
+        class="modal fade"
+        id="searchPop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="searchPopLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form method="get">
+                <input type="search" placeholder="search LindaIkeji" />
+                <button type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--==MAIN SECTION==-->
+    <section class="home container" id="home">
+      <div class="row">
+        <main class="col-lg-8 col-12 home__posts bg-white">
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <i class="fa-solid fa-user-tie"></i> By Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <hr />
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <i class="fa-solid fa-user-tie"></i> By Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <hr />
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <i class="fa-solid fa-user-tie"></i> By Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <hr />
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <i class="fa-solid fa-user-tie"></i> By Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <hr />
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <em><i class="fa-solid fa-user-tie"></i> By</em> Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <hr />
+          <div class="home__posts--item">
+            <h2 class="home__posts--singleTitle">Post Title goes here</h2>
+            <img
+              src="Images/background-img.webp"
+              alt=""
+              class="img-fluid home__posts--singleThumbnail"
+            />
+            <p class="home__posts--singleExcerpt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quis
+              eius, quia molestias consequuntur expedita minus quam soluta fuga
+            </p>
+            <div class="post__meta">
+              <p class="post__meta--author">
+                <i class="fa-solid fa-user-tie"></i> By Author Name
+              </p>
+              <p class="post__meta--date">On 12/12/2022</p>
+              <p class="post__meta--comment">
+                0 <i class="fa-solid fa-comment"></i>
+              </p>
+              <a href="#" class="home__posts--readMoreBtn">READ MORE</a>
+            </div>
+          </div>
+          <div class="home__posts--pagination">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    ><i class="fa-solid fa-angles-left"></i> Previous</a
+                  >
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#"
+                    >Next <i class="fa-solid fa-angles-right"></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </main>
+        <sidebar class="col-lg-4 col-12 home__sidebar pt-3">
+          <div class="home__sidebar--adsItem">
+            <a href="#"
+              ><img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Advert-here.gif"
+                class="img-fluid"
+                width="100%"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="home__sidebar--adsItem">
+            <a href="#"
+              ><img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Advert-Image-gif.gif"
+                class="img-fluid"
+                width="100%"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="home__sidebar--adsItem">
+            <a href="#"
+              ><img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Advert-here.gif"
+                class="img-fluid"
+                width="100%"
+                loading="lazy"
+            /></a>
+          </div>
+          <div class="home__sidebar--popular">
+            <h3>Popular Gists</h3>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+            <div class="home_sidebar--popularItem">
+              <img
+                src="https://www.alphawebtips.com/wp-content/uploads/2022/12/Alpha-web-consult-icon-on-black.webp"
+                alt="post thumbnail"
+                class="popular__thumbnail"
+                loading="lazy"
+                width="90"
+                height="90"
+              />
+              <h4 class="popular__post-title">
+                <a href="#">Post title goes here again</a>
+              </h4>
+            </div>
+          </div>
+        </sidebar>
+      </div>
+    </section>
+
+    <!--==ADVERTS ABOVE FOOTER==-->
+    <div class="footer__adverts">
+      <div class="adverts--1">
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="https://www.alphawebtips.com/wp-content/uploads/2022/12/PLACE-YOUR-ADVERT-HERE.gif"
+            class="img-fluid"
+            height="90"
+            width="728"
+        /></a>
+      </div>
+      <div class="adverts--1">
+        <a href="#"
+          ><img
+            loading="lazy"
+            src="https://www.alphawebtips.com/wp-content/uploads/2022/12/PLACE-YOUR-ADVERT-HERE.gif"
+            class="img-fluid"
+            height="90"
+            width="728"
+        /></a>
+      </div>
+    </div>
+
+    <!--==FOOTER SECTION==-->
+    <footer class="footer">
+      <div class="footer__nav">
+        <a href="#">Tip-off</a>
+        <a href="#advertPop" data-bs-toggle="modal" data-bs-target="#advertPop"
+          >Advertise with us</a
+        >
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__copyright">
+        <p class="text-center">
+          @ Copyright LindaIkeji WordPress Theme 2022. Made by
+          <a href="https://www.alphawebtips.com">Dapo Obembe</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
