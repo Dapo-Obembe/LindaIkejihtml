@@ -1,0 +1,108 @@
+/* :root {
+  --font: "Quicksand", sans-serif;
+  --main-red: #5b091c;
+  --title-color: #890e2a;
+  --secondary-red: #b71338;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+.single__post {
+  min-height: 600px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.single__post--heading {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 800;
+  color: var(--title-color);
+  margin: 1rem 0;
+}
+
+.single__post--thumbnail {
+  border-radius: 0.3rem;
+}
+
+.single__post--contents p {
+  color: #000;
+  font-size: clamp(1rem, 5vw, 1.2rem);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.single__post--contents h2 {
+  color: var(--main-red);
+  font-weight: 600;
+  font-size: clamp(1.6rem, 3vw, 2rem);
+  margin: 0.3rem 0;
+}
+
+.single__post--meta {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: clamp(10px, 3vw, 12px);
+  font-weight: 700;
+}
+
+.single__post-recent {
+  border-top: 1px solid var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+  padding: 2.5rem 0;
+  margin: 2rem 0;
+}
+
+.single__post-recent h3 {
+  background-color: var(--main-red);
+  color: whitesmoke;
+  padding: 4px 8px;
+  text-transform: uppercase;
+}
+
+.carousel-item img {
+  z-index: 1;
+  height: 300px;
+  width: 350px;
+  object-fit: cover;
+  margin-bottom: -60px;
+  /* opacity: 0.6; */
+  backface-visibility: visible;
+}
+.carousel-itemTitle {
+  /* margin-top: -50px; */
+  font-weight: 600;
+  z-index: 10;
+  background-color: var(--main-red);
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  color: aliceblue;
+  padding: 1.5rem 0;
+  position: relative;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-image: none !important;
+}
+
+.see-more-posts {
+  float: right;
+}
+
+.see-more-posts a {
+  color: var(--main-red);
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.see-more-posts a:hover .fa-arrow-right {
+  transform: rotate(180deg);
+  transition: all ease-in 0.3s;
+}
