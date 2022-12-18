@@ -210,7 +210,7 @@
     <section class="single__post container">
       <div class="row single__post--container">
         <main class="col-lg-8 col-12 bg-white">
-          <article class="single__post">
+          <article class="single__post w-100">
             <h1 class="single__post--heading">Post Title Here</h1>
             <img
               src="Images/Argentina.webp"
@@ -232,24 +232,20 @@
                 Recusandae dolor facere accusantium architecto? Illo vero ut
                 quod natus aperiam adipisci, ullam repellat maxime laboriosam
                 quis commodi deserunt, odit, debitis beatae. Magnam optio odio
-                dolore consequuntur ea nulla doloremque. Quos impedit, odit
+                dolore consequuntur ea nulla doloremque. <a href="#">Link style</a> Quos impedit, odit
                 itaque ex quas, recusandae alias quasi eos nihil nobis nesciunt
                 doloremque molestiae! Dolore blanditiis consequuntur earum
                 veritatis debitis distinctio. Explicabo impedit repudiandae
                 veritatis quod sapiente ut fugit magni sit, eaque aspernatur
                 quia ex incidunt velit minima, cum a quisquam. Accusantium
-                deserunt iusto natus voluptas accusamus dolorem ex aut fugiat.
+                deserunt iusto natus voluptas accusamus dolorem ex aut fugiat.<br>
                 Sunt quis accusamus fuga dolore numquam reprehenderit quibusdam,
                 soluta quod aut facilis delectus ipsum earum laboriosam
                 repudiandae alias velit veniam similique itaque saepe quaerat ea
-                eligendi vel dolor! Temporibus, delectus. Iusto laborum
-                praesentium similique officia eum rerum. Non quibusdam sapiente,
-                voluptas inventore, beatae pariatur dolor laborum earum commodi
-                nobis veniam? Possimus, mollitia animi rerum delectus quae
-                voluptatem officiis unde? Eaque. Exercitationem, illo sapiente,
-                totam a placeat iure inventore corporis officiis iusto error
-                omnis, voluptas enim laudantium? Quibusdam, animi eos eveniet
-                cupiditate veniam beatae praesentium adipisci sequi. Totam
+                eligendi vel dolor! Temporibus, delectus. 
+                <blockquote>This is a how a blockquote or quote is styled to look. You can override this if you want</blockquote> 
+                
+                Totam
                 cupiditate enim delectus. Esse quod facere commodi itaque
                 dolorem minima quidem illo quaerat doloremque! Enim excepturi
                 vel minus consequatur dicta molestiae autem ut accusamus aut
@@ -261,7 +257,16 @@
                 autem, obcaecati in molestiae quo repudiandae, provident
                 similique ea aliquam non fugiat iusto excepturi aut deserunt
                 asperiores, officiis magni reprehenderit recusandae vel
-                necessitatibus id consequuntur. Possimus distinctio tempora
+                necessitatibus id consequuntur. 
+                <ul>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ul>
+                <ol>
+                  <li>List item</li>
+                  <li>List item</li>
+                </ol>
+                Possimus distinctio tempora
                 mollitia. Iusto corporis aliquam, inventore atque adipisci
                 quaerat dolorum! Odit illum eveniet quidem accusamus, recusandae
                 pariatur vero officia velit, dolores nobis molestiae eos esse
@@ -282,6 +287,13 @@
               <!-- Go to www.addthis.com/dashboard to customize your tools -->
               <div class="addthis_inline_share_toolbox_v984"></div>
             </div>
+            <div class="single__post--tags">
+              <p><strong>See More Posts On <i class="fa-solid fa-arrow-down"></i></strong></p>
+              <ul class="post__tags" style="display: flex;list-style: none;flex-direction: row;flex-wrap: wrap;justify-content:flex-start;gap: 1rem;align-items: flex-start;">
+                <li><a href="#">Tag 1</a></li>
+                <li><a href="#">Tag 2</a></li>
+              </ul>
+            </div>
             <div class="header__adverts--1 mt-2">
               <a href="#"
                 ><img
@@ -290,6 +302,16 @@
                   height="90"
                   width="728"
               /></a>
+            </div>
+            <div class="single__post--cat">
+              <p class="text-white m-0" ><strong>ALL CATEGORIES</strong></p>
+              <ul class="single__post--catList" style="display: flex;list-style: none;flex-direction: row;justify-content:flex-start;gap: 1rem;align-items: center;margin: 0;overflow-x: scroll;overflow-y:hidden;padding:1rem 0;width: 100%;">
+                <li><a href="#">Gossip</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Murder</a></li>
+                <li><a href="#">Entertainment</a></li>
+                <li><a href="#">Fashion</a></li>
+              </ul>
             </div>
             <div class="single__post-recent" style="min-height: 350px">
               <h3>Recent Stories</h3>
@@ -373,7 +395,7 @@
 
               <div class="see-more-posts pt-3 pb-3">
                 <a href="#"
-                  >SEE MORE STORES <i class="fa-solid fa-arrow-right"></i
+                  >SEE MORE STORES  <i class="fa-solid fa-arrow-right"></i
                 ></a>
               </div>
             </div>
@@ -401,6 +423,11 @@
                 </p>
               </div>
             </div>
+            <div class="back-to-home pt-3 pb-3 text-center">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-left"></i
+                > BACK TO HOMEPAGE  </a>
+              </div>
           </article>
         </main>
         <sidebar class="col-lg-4 col-12 home__sidebar pt-3">

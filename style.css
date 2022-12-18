@@ -24,6 +24,7 @@ body {
   font-family: var(--font);
   background: url("Images/background-img.webp") center/cover no-repeat;
   background-attachment: fixed;
+  scroll-behavior: smooth;
 }
 
 /* HEADER SECTION */
@@ -219,6 +220,7 @@ main {
   font-size: clamp(1.1rem, 3vw, 1.3rem);
   font-weight: 800;
   color: var(--title-color);
+  text-transform: capitalize;
 }
 
 .home__posts--singleThumbnail {
@@ -238,6 +240,7 @@ main {
   align-items: center;
   font-size: clamp(8px, 3vw, 10px);
   font-weight: 700;
+  margin: 0;
 }
 
 .home__posts--readMoreBtn {
@@ -246,6 +249,14 @@ main {
   font-weight: 700;
   background-color: var(--main-red);
   padding: 2px 4px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.home__posts--readMoreBtn:hover {
+  border: 1px solid var(--main-red);
+  color: var(--main-red);
+  background-color: transparent;
   border-radius: 4px;
 }
 
