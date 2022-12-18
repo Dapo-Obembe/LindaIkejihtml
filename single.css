@@ -31,7 +31,7 @@
 
 .single__post--contents p {
   color: #000;
-  font-size: clamp(0.8rem, 5vw, 1.1rem);
+  font-size: clamp(1rem, 3vw, 1.1rem);
   line-height: 1.5;
   font-weight: 500;
 }
@@ -65,6 +65,7 @@
   color: whitesmoke;
   padding: 4px 8px;
   text-transform: uppercase;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
 
 .carousel-item img {
@@ -105,4 +106,37 @@
 .see-more-posts a:hover .fa-arrow-right {
   transform: rotate(180deg);
   transition: all ease-in 0.3s;
+}
+
+.comment-container {
+  min-height: 500px;
+}
+
+.comment-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+.comment-head a {
+  text-decoration: none;
+  background-color: var(--main-red);
+  color: whitesmoke;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: clamp(0.8rem, 3vw, 1.5rem);
+  padding: 0.3rem 0.6rem;
+  align-self: center;
+}
+
+.comment-disclaimer {
+  background-color: #f2dede;
+  min-height: 90px;
+  padding: 1rem 2rem;
+  color: var(--main-red);
+  font-size: clamp(0.6rem, 3vw, 1.2rem);
+  font-weight: 700;
+  border-radius: 6px;
 }

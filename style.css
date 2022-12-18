@@ -7,6 +7,10 @@
   --secondary-red: #b71338;
 }
 
+html {
+  background: black light;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -110,6 +114,12 @@ header {
   align-self: flex-end;
   color: whitesmoke;
   font-size: clamp(10px, 3vw, 12px);
+}
+
+@media screen and (max-width: 1200px) {
+  .site__logo--extra {
+    display: none;
+  }
 }
 
 .site__description {
