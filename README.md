@@ -2,7 +2,7 @@
 
 This the static files of the blog developed by Dapo Obembe from scratch. The WordPress version of the blog is a private repo and can be made available on request only.
 
-See demo of the WordPress here: URL-TO-THE-BLOG
+See demo of the WordPress theme here: https://libtheme.alphawebconsult.com/
 
 ## Screenshot
 
